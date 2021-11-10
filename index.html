@@ -309,13 +309,12 @@
                 font-size: 100px;
             }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 400px) {
+            
         .logo
         {
             display: flex;
             float: left;
-            margin-right: 20px;
-            margin-left: 30px;
         }
         .header ul{
             display: flex;
@@ -325,11 +324,11 @@
             height: 5%;
         }
         .header ul li{
-            font-size: 20px;
+            font-size: 10px;
             list-style-type: none;
             padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 10px;
+            padding-right: 5px;
+            padding-top: 5px;
             margin-top: 10px;
         }
         .header ul li a
@@ -371,7 +370,30 @@
         }  
         }
 
-        
+        .footer>p
+        {
+            
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0px;
+            
+        }
+        .footer p::after {
+         content: '';
+         display: block;
+         width: 0;
+         height: 2px;
+         background-color: yellow;
+         position: absolute;
+         left: 0;
+         bottom: -60px;
+         transition: all 0.3s;
+  }
+  .footer p:hover::after {
+    width: 100%;
+  }
     </style>
     <script>
         
@@ -407,8 +429,8 @@
             <div class="logo">
                 <h1><span
                         style="color: rgb(236, 86, 27); font-size: 50px; font-weight: 1000;">T</span><span>o</span><span
-                        style="color: rgb(20, 228, 20); font-weight: 900;">ur</span> <span
-                        style="color: rgb(236, 86, 27); font-size: 50px; font-weight: 1000;">I</span>nd<span
+                        style="color: rgb(20, 228, 20); font-weight: 700;">ur</span> <span
+                        style="color: rgb(236, 86, 27); font-size: 50px; font-weight: 9000;">I</span>nd<span
                         style="color: rgb(20, 228, 20); font-weight: 900;">ia</span><span
                         style="color:rgb(20, 228, 20); font-weight: 900">!</span><span
                         style="color:rgb(236, 86, 27); font-weight: 900;">!</span></h1>
@@ -445,6 +467,7 @@
                 </div>
          </li>-->
         <li><a href="./Aman/Socialmedia.html"><i class="fa fa-sign-in"></i>Sign In</a></li>
+        
         </ul>
     </header>
     <!---------bus animation
@@ -506,7 +529,7 @@
         <a class="next" style="color: white;" onclick="plusSlides(1)">&#10095;</a>
     </section>
     <footer class="footer">
-        <section class="contact">
+    <section class="contact">
     <div class="container">
         <div class="contactInfo">
             <div class="box">
@@ -551,16 +574,18 @@
                 </div>
             </form>
         </div>
-        <div>
-            <p>
-                Copyright © 2021 All Rights Reserved by
-                <a href="./index.html">www.IncredibalIndia.com.</a>
-              </p>
         
-    </div>
+</div>
+<div style="background-color: black;color: white;text-align: center; width: 100%;padding-top: 10px; padding-bottom: 10px; height: 10%;font-size: 15px; position: absolute; bottom: 0%;">
+    <p>
+        Copyright © 2021 All Rights Reserved by
+        <a href="./index.html">www.IncredibalIndia.com.</a>
+      </p>
 </div>
 </section>
     </footer>
-</body>
+        
+</div>
+</section>
 </html>
     
