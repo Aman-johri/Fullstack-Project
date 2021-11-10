@@ -46,6 +46,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding-left: 20%;
 }
 .container .contactInfo .box
 {
