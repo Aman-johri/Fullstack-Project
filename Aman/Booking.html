@@ -74,9 +74,32 @@
     button:hover {
      border: 2px solid black;
     }
+    .close
+        {
+          position: absolute;
+          right: 35px;
+          top: 15px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #f1f1f1;
+        }
+.close a
+        {
+          text-decoration: none;
+        }
+        
+.close:hover,
+.close:focus 
+        {
+          color: #f44336;
+          cursor: pointer;
+        }
+
     </style>
 </head>
-<body>
+<body id="id02">
+    
+   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Booking Form"><a href="../shrishti/services.html">&times;</a></span>
     <h1 style="text-align: center;">Travel Booking</h1>
     <form action="" method="post">
         <div class="info">
